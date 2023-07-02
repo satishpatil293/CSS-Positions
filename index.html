@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+
+    <style>
+        .container {
+            background-color: antiquewhite;
+            height: 3500px;
+        }
+
+        .box {
+            display: inline-block;
+            border: 1px solid grey;
+            width: 150px;
+            height: 150px;
+            margin: 3px;
+            background-color: aqua;
+        }
+
+        /* CSS position -
+        1.Static position - it is default position of css property */
+
+        /* 2. Absoulte Position - relative to its parent position */
+        #box2{
+            position: absolute;
+            top: 25px;
+        }
+        /* 3. Relative Positon - relative to its normal positon  */
+        #box4{
+            position: relative;
+            right: 30px;
+            top: 20px;
+        }
+
+        /* 4. Fixed Position - relative to the window browser */
+        #box5{
+            position: fixed;
+            bottom: 2px;
+            right: 3px;
+        }
+
+        /* 5. Sticky Position - fixed to its normal position */
+        #box6{
+            position: sticky;
+            top: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+        <div class="box" id="box5">5</div>
+        <div class="box" id="box6">6</div>
+    </div>
+    
+</body>
+</html>
